@@ -1,4 +1,4 @@
-# Jumpstart
+# BearTrafficControl
 A Rails starter template
 
 Amalgamated from BigBinary's [Wheel](http://github.com/bigbinary/wheel), Thoughtbot's [Suspenders](https://github.com/thoughtbot/suspenders) and [Upcase](http://upcase.com) - with Stripe subscription billing out of the box.
@@ -54,14 +54,14 @@ rake setup
 bundle exec rails server
 ```
 
-#### Replace Jumpstart with your project name
+#### Replace BearTrafficControl with your project name
 
-Replace all occurrences of "Jumpstart" with your own project name.
+Replace all occurrences of "BearTrafficControl" with your own project name.
 
 Let's say that the project name is "Chainsaw". Execute the command below:
 
 ```
- perl -e "s/Jumpstart/Chainsaw/g;" -pi $(find . -type f)
+ perl -e "s/BearTrafficControl/Chainsaw/g;" -pi $(find . -type f)
 ```
 
 #### Setup Stripe

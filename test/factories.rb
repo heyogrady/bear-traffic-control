@@ -48,7 +48,7 @@ FactoryGirl.define do
 
     trait :team do
       price_in_dollars 89
-      name "Jumpstart for teams"
+      name "BearTrafficControl for teams"
       sku "team_plan"
       includes_team true
       minimum_quantity 3

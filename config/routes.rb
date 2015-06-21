@@ -10,7 +10,7 @@ class ActionDispatch::Routing::Mapper
 
 end
 
-Jumpstart::Application.routes.draw do
+BearTrafficControl::Application.routes.draw do
 
   draw :devise
 
