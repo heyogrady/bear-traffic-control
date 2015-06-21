@@ -29,7 +29,7 @@ def create_individual_plans
   @professional_plan = create_plan(
     sku: "professional",
     name: "Professional Plan",
-    price_in_dollars: 79,
+    price_in_dollars: 59,
     short_description: "Enjoy every feature at your disposal.",
     description: "A long description.",
     featured: true
@@ -38,7 +38,7 @@ def create_individual_plans
   @discounted_annual_plan = create_plan(
     sku: Plan::DISCOUNTED_ANNUAL_PLAN_SKU,
     name: "Discounted Annual Plan",
-    price_in_dollars: 175,
+    price_in_dollars: 290,
     short_description: "Everything you're used to, but a bit cheaper.",
     description: "A long description.",
     featured: false,
