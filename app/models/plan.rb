@@ -1,6 +1,6 @@
 class Plan < ActiveRecord::Base
 
-  DISCOUNTED_ANNUAL_PLAN_SKU = "175-annually"
+  DISCOUNTED_ANNUAL_PLAN_SKU = "290-annually"
   LITE_PLAN_SKU = "lite"
   STANDARD_PLAN_SKU = "standard"
   PROFESSIONAL_PLAN_SKU = "professional"

@@ -15,7 +15,6 @@ gem "airbrake" # for error tracking
 gem "analytics-ruby", "~> 2.0.0", require: "segment/analytics" # segment.io
 gem "arel"
 gem "autoprefixer-rails" # for CSS vendor prefixes
-gem "binding_of_caller" # interactive prompt in error messages
 gem "browser" # for variants support
 gem "carrierwave" # for handling file uploads
 gem "country_select" # for automatic country select with simple_form
@@ -31,7 +30,7 @@ gem "fog", require: false # for handling s3
 gem "friendly_id", "~> 5.1.0"
 gem "font-awesome-sass", "~> 4.3.0" # use font-awesome
 gem "i18n-tasks"
-# gem "intercom-rails" # tracking user behavior
+gem "intercom-rails" # tracking user behavior
 gem "jbuilder", "~> 1.2" # for building JSON
 gem "jquery-rails"
 gem "haml-rails" # haml as templating engine
@@ -40,7 +39,7 @@ gem "lograge" # shortens format of rails request logs onto a single line
 gem "mail_interceptor", github: "bigbinary/mail_interceptor", group: [:development, :staging] # intercepts outgoing emails in nonproduction environment
 gem "marginalia" # attaches comments to Active Record queries
 gem "mini_magick" # for resizing images
-# gem "newrelic_rpm" # monitor app performance
+gem "newrelic_rpm" # monitor app performance
 gem "normalize-rails", "~> 3.0.0"
 gem "omniauth"
 gem "omniauth-facebook"
