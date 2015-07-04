@@ -16,6 +16,10 @@ FactoryGirl.define do
     "lastname#{n}"
   end
 
+  sequence :name do |n|
+    "name #{n}"
+  end
+
   factory :coupon do
     amount 10
     code
@@ -236,6 +240,13 @@ FactoryGirl.define do
         )
       end
     end
+  end
+
+  factory :objective do
+    association :user, factory: :subscriber
+    name
+    due_year 2015
+    due_quarter 4
   end
 
 end

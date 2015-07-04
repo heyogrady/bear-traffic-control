@@ -1,5 +1,8 @@
 %ul.nav.navbar-nav
-  = nav_link 'Home', root_path
-  = nav_link 'About', pages_about_path
-  = nav_link 'Contact us', pages_contact_us_path
+  - if user_signed_in?
+    = nav_link "Objectives", objectives_path
+  - else
+    = nav_link 'Home', root_path
+    = nav_link 'About', pages_about_path
+    = nav_link 'Contact us', pages_contact_us_path
 = render("shared/navigation/user_right_nav")
