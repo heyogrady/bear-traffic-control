@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
   mount_uploader :profile_image, ProfileImageUploader
 
   belongs_to :team
+  has_many :objectives
   has_many :subscriptions, dependent: :destroy
 
   validates :email, presence: true

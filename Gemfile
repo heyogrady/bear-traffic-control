@@ -33,6 +33,8 @@ gem "i18n-tasks"
 gem "intercom-rails" # tracking user behavior
 gem "jbuilder", "~> 1.2" # for building JSON
 gem "jquery-rails"
+gem "jquery-turbolinks" # to use jquery with turbolinks
+gem "jquery-ui-rails" # jQuery UI
 gem "haml-rails" # haml as templating engine
 gem "handy" # collection of handy tools
 gem "lograge" # shortens format of rails request logs onto a single line
@@ -54,6 +56,7 @@ gem "sprockets-rails", "3.0.0.beta1"
 gem "sprockets-strict-mode" # use "strict mode" in JavaScript
 gem "stripe", "~> 1.15.0" # charging customers
 gem "stripe_event" # Stripe webhook integration
+gem "turbolinks" # for faster page loads
 gem "twilio-ruby" # phone and SMS services
 gem "uglifier", ">= 1.0.3"
 gem "unicorn", group: [:staging, :production] # staging & production server

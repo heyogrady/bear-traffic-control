@@ -80,7 +80,7 @@ SimpleForm.setup do |config|
     b.optional :readonly
     b.use :label, class: "control-label"
 
-    b.use :input
+    b.use :input, class: "form-control"
     b.use :error, wrap_with: { tag: "div", class: "error-message" }
     b.use :hint, wrap_with: { tag: "div", class: "field-help" }
   end

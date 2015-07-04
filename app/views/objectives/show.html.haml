@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @objective.name
+%p
+  %b Due:
+  = "Q#{@objective.due_quarter} - #{@objective.due_year}"
+%p
+  %b User:
+  = @objective.user.name
+
+= link_to 'Edit', edit_objective_path(@objective)
+\|
+= link_to 'Back', objectives_path

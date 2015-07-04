@@ -1,0 +1,32 @@
+<h1>Objectives</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Due</th>
+      <th>User</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @objectives.each do |objective| %>
+      <tr>
+        <td>
+          <%= link_to(objective.name, objective) %>
+        </td>
+        <td>
+          Q<%= objective.due_quarter %> - <%= objective.due_year %>
+        </td>
+        <td>
+          <%= objective.user.name %>
+        </td>
+        <td>
+          <%= link_to 'Destroy', objective, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br/>
+<%= link_to 'New Objective', new_objective_path, class: "btn btn-primary" %>

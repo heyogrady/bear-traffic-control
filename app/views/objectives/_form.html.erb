@@ -1,0 +1,6 @@
+<%= simple_form_for(@objective) do |f| %>
+  <%= f.input(:name) %>
+  <%= f.input(:due_year, collection: [2015, 2016, 2017]) %>
+  <%= f.input(:due_quarter, collection: [1, 2, 3, 4]) %>
+  <%= f.button(:submit, "Save", class: "btn btn-primary") %>
+<% end %>
